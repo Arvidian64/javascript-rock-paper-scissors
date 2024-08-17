@@ -68,4 +68,16 @@ function playRound() {
 
 }
 
-playRound();
+function playGame() {
+    while(humanScore+computerScore < 5) {
+        playRound();
+    }
+    if (humanScore > 2) {
+        console.log("Congratulatiuons! You won "+humanScore+" points out of 5")
+    }
+    else {
+        console.log("Oh no! you lost "+computerScore+" points out of 5")
+    }
+}
+
+playGame();
