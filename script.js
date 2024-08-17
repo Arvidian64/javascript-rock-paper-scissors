@@ -1,6 +1,6 @@
 function getComputerChoice() {
     let randomChoice = Math.floor(Math.random() * 3) + 1;
-    console.log(randomChoice)
+    /* console.log(randomChoice) */
     switch (randomChoice) {
         case 1:
             return "Rock";
@@ -14,7 +14,7 @@ function getComputerChoice() {
 function getHumanChoice() {
     let choice = prompt("Rock, Paper or Scissors?").toLowerCase();
     choice = choice.charAt(0).toUpperCase() + choice.slice(1);
-    console.log(choice);
+    /* console.log(choice); */
     return choice;
 }
 
@@ -27,7 +27,7 @@ function playRound() {
 
     let humanChoice = getHumanChoice();
 
-    console.log(computerChoice+" "+humanChoice)
+    /* console.log(computerChoice+" "+humanChoice) */
 
     if (computerChoice == humanChoice) {
         console.log("It's a draw! Your "+humanChoice+" is the same as "+computerChoice);
